@@ -70,7 +70,7 @@ public class Board {
 		for (int m = 0; m < this.numMines; m++) {
 			int randRow = randomRow.nextInt(masterBoard.length) + 1;
 			int randCol = randomColumn.nextInt(masterBoard[0].length) + 1;
-			System.out.println(randRow + " " + randCol);
+			//System.out.println(randRow + " " + randCol);
 			if (this.getSpotMasterBoard(randRow, randCol).equals(".")) {
 				this.setMineMasterBoard(randRow, randCol);
 				mineList.add(randRow + " " + randCol);
