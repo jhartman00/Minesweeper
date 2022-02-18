@@ -1,8 +1,8 @@
 
 # Minesweeper
 
-I built a version of minesweeper you can play in your console!  
-- The game is set to a 9x9 board by default but by uncommenting line 20 and lines 23-38 in the board.java file instead of just starting the game, the program will ask you the dimensions of the board you want to play.  This feature is in beta as when the board is drawn larger than 9x9 it doesnt print as well
+I built a version of the classic minesweeper game you can play in your console!  
+- The game is set to a 9x9 board by default but by uncommenting line 20 and lines 23-38 in the board.java file instead of just starting the game, the program will ask you the dimensions of the board you want to play. Please note that this feature is in beta as when the board is drawn larger than 9x9 it doesn't print well.
 - If you want a list of the mines generated (as shown in the demo video) you should uncomment line 73 in the board.java file
 
 ## Authors
@@ -16,7 +16,7 @@ https://youtu.be/PmbWr2v_N4Y
 
 ## Running the Program
 
-1. To try this project for yourself make sure you have Java installed on your computer.  If you don't you can go to https://www.java.com/en/download/ to get it for free!
+1. To try this project for yourself, make sure you have Java installed on your computer.  If you don't have Java installed, you can go to https://www.java.com/en/download/ to get it for free
     - Windows: https://www.youtube.com/watch?v=IJ-PJbvJBGs
     - Mac: https://www.youtube.com/watch?v=pxi3iIy4F5A
 2. Clone the directory or download the zip file to a location of your choosing.
@@ -26,7 +26,7 @@ https://youtu.be/PmbWr2v_N4Y
 
 ## Once the program is running
 
-1. When the program is running you will see a prompt asking how many mines you want on the field. You can enter any number as long as it is within 1 and 80 (or row*col-1 if custom) inclusive.
+1. When the program is running you will see a prompt asking how many mines to set on the field. You can enter any number as long as it is within 1 and 80 (or row*col-1 if custom) inclusive.
 2. After that it will generate the board
     - The top row shows the column numbers
     - The first column shows the row numbers
@@ -36,14 +36,14 @@ https://youtu.be/PmbWr2v_N4Y
      - If you mark a spot as free and there is a mine in that spot, the game ends and you will get the message "You stepped on a mine and failed!"
      - If you mark a spot as mine you will see an * symbol appear on the board.  If you change your mind you can use the same command x x mine to unset that mine marker
      - If you mark a spot as free and there isn't a mine the program will check the surrounding spaces.  
-         - If any of them have a mine, the spot you marked will get a number 1-8 representing how many mines are around that spot.  
-         - If there are not mines surrounding the spot marked, the program will run the same check on all 8 spaces around the origional mark and subsequently do so in every direction until it reaches a spot in which there is at least one mine surrounding the spot.  The program will mark all the spots without a mine surrounding it with /.
-4. Once either all the mines have been marked you will have won the game and will get the message "Congratulations! You found all the mines!"
+         - If any of the spaces have a mine, the spot you marked will get a number 1-8 representing how many mines are around that spot.  
+         - If there are no mines surrounding the spot marked, the program will run the same check on all 8 spaces around the origional mark and subsequently do so in every direction until it reaches a spot in which there is at least one mine surrounding the spot.  The program will mark all the spots without a mine surrounding it with a "/".
+4. Once all the mines have been marked, you will have won the game and will get the message "Congratulations! You found all the mines!"
 
   
 ## A few things to note
 
-1. As stated before, sizing the board larger than 9x9 may have some formatting issues however the game should play correctly.
+1. As stated before, sizing the board larger than 9x9 may have some formatting issues however the game plays correctly.
 2. If you resize the board to 1x1 the game will not work correctly and you will be unable to win.
 
 ## FAQ
@@ -55,7 +55,7 @@ Feel free to email me at jamiehartman00@gmail.com or jhartman1@tulane.edu, and I
 
 ## Lessons Learned
 
-Like all projects this one had its own set of unique challenges.  Printing the board in a readable way was a little challenging at first however I was able to figure out a pretty good way to do it. If i were to redo this project I would probably add color to the console and/or a UI that is more plesant to interact with.  The second challenge was the recursive spot checker algorithm.  I learned a lot while making this algorithm so in the future I think similar algorithms will be easier to write.
+Like all projects this one had its own set of unique challenges.  Printing the board in a readable way was challenging at first. However, I was able to figure out an effective way to do it. If i were to redo this project I would probably add color to the console and/or a UI that is more plesant to interact with.  The second challenge was the recursive spot checker algorithm.  In the future I think similar algorithms will be easier to write.
 
 ## Want more?
 
